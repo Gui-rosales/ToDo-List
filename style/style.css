@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    --light_green: #bdefe3;
+    --light_beige: #EbF4c6; 
+    --green_back: #6cdd8f;
+    --red_back: #f05268;
+}
+
+body{
+    background-color: var(--light_green);
+}
+
+#container{
+    margin: auto;
+    margin-top: 10rem;
+    width: 25rem;
+    height: 25rem;
+    padding: 5rem;
+    background-color: var(--light_beige);
+    /* Centralizando Texto */
+
+    /* Criando a borda do container */
+    
+    border: 5px dashed black;
+    border-radius: 20px;
+}
+
+h1{
+   font-size: 3rem;
+   font-weight: 600;
+   text-align: center; 
+}
+
+section{    
+    height: 4rem;
+    margin-top: 0.1rem;
+
+}
+
+input{
+    width: 18rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+    border-radius: 50px;
+    margin-right: 1.5rem;
+
+}
+input::placeholder{
+    font-style: italic;
+}
+
+#add_btn{
+    width: 1.9rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    margin-top: 0;
+    
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border: 1.5px solid black;
+    border-radius: 50px;
+
+}
+
+#delete_btn{
+    width: 1.9rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    margin-top: 0;
+    
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border: 1.5px solid black;
+    border-radius: 50px;
+
+}
+
+#add_btn:hover{
+    background-color: var(--green_back);
+}
+
+#delete_btn:hover{
+    background-color: var(--red_back);
+}
+
+ul{
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    font-size: 1rem; 
+}
+
+li{
+    list-style-type: circle;
+    margin-top: 0.8rem;
+}
+
+#removeLiItem{
+    float: right;
+    width: 1.5rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border: 1.5px solid black;
+    border-radius: 50px;
+    margin-right: 0.8rem;
+}
+
+#removeLiItem:hover{
+    background-color: var(--red_back);
+}
