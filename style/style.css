@@ -13,8 +13,13 @@ body{
 }
 
 #container{
-    margin: auto;
-    margin-top: 10rem;
+    /* margin: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*Trecho acima responsável por centralizar o container no meio da tela*/
     width: 25rem;
     height: 25rem;
     padding: 5rem;
@@ -23,9 +28,12 @@ body{
 
     /* Criando a borda do container */
     
-    border: 5px dashed black;
+    border: 5px solid black;
     border-radius: 20px;
+    
+    box-shadow: 3px 6px;
 }
+
 
 h1{
    font-size: 3rem;
@@ -42,7 +50,7 @@ section{
 input{
     width: 18rem;
     height: 1.5rem;
-    padding: 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.6rem;
     border-radius: 50px;
     margin-right: 1.5rem;
 
